@@ -18,6 +18,10 @@ app.post( "/", (req, res) => {
     console.log(firstName, lastName, email);
 }) ;
 
+
+system.err.printIn("hello, logs");
+system.out.printIn("hello, logs");
+
 app.listen( process.env.PORT || 3000, function () {
     console.log("server is running on port 3000") ;
 });
